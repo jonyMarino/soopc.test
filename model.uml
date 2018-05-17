@@ -28,7 +28,7 @@
       <ownedOperation xmi:type="uml:Operation" xmi:id="_A2Ebg0JREeiRq9NLvdJ-Kg" name="ctor" isLeaf="true">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_A2EbhEJREeiRq9NLvdJ-Kg" name="name" type="_p2i-AEJLEeiRq9NLvdJ-Kg"/>
       </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_DdJygEJREeiRq9NLvdJ-Kg" name="foo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DdJygEJREeiRq9NLvdJ-Kg" name="foo" isLeaf="true"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_ZTIp4FijEeiHl6gR5njMUA" name="getNameFollowedByClassName" visibility="public">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZTJQ8FijEeiHl6gR5njMUA" visibility="public" type="_PGxjkFijEeiHl6gR5njMUA" direction="return"/>
       </ownedOperation>

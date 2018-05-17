@@ -54,7 +54,6 @@ typedef struct {
 //Class GrandChild V-Table
 typedef struct GrandChildVtbl{
 	ChildVtbl superClass;
-	void (*foo)(GrandChild * self); 
 }GrandChildVtbl;
 
 
@@ -63,7 +62,6 @@ typedef struct GrandChildVtbl{
 void GrandChild_ctor (GrandChild * self, const char * name);
 void GrandChild_foo (GrandChild * self);
 
-void GrandChild_foo_ (GrandChild * self);
 char * GrandChild_getNameFollowedByClassName_ (Child * self);
 
 

@@ -15,9 +15,10 @@
 
 #include <stdlib.h>
 #include "Aplicacion/Parent.h"
+#include "Aplicacion/Child.h"
 
 //-- module being tested
-#include "Aplicacion/Child.h"
+#include "Aplicacion/GrandChild.h"
 
 
 
@@ -32,8 +33,9 @@
 /*******************************************************************************
  *    PRIVATE DATA
  ******************************************************************************/
-Child  * aChild;
-Parent * childAsParent;
+GrandChild  * aGrandChild;
+Child * grandchildAsChild;
+Parent * grandchildAsParent;
 /*******************************************************************************
  *    PRIVATE FUNCTIONS
  ******************************************************************************/
@@ -45,39 +47,46 @@ Parent * childAsParent;
 
 void setUp(void)
 {
-	aChild = malloc(sizeof(Child));
-	Child_ctor(aChild,"Junior");
-	childAsParent = (Parent *) aChild;
+	aGrandChild = malloc(sizeof(GrandChild));
+	GrandChild_ctor(aGrandChild,"Mike");
+	grandchildAsParent = (Parent *) aGrandChild;
+	grandchildAsChild = (Child *) aGrandChild;
 }
 
 void tearDown(void)
 {
-	free(aChild);
+	free(aGrandChild);
 }
 
 /*******************************************************************************
  *    TESTS
  ******************************************************************************/
 
-void test_child_ctor(void)
+void test_grandchild_ctor(void)
 {
 
-    TEST_ASSERT_EQUAL_STRING("Junior",childAsParent->name);
-    TEST_ASSERT_NOT_NULL(childAsParent->vptr);
+    TEST_ASSERT_EQUAL_STRING("Mike",grandchildAsParent->name);
+    TEST_ASSERT_NOT_NULL(grandchildAsParent->vptr);
 }
 
-void test_child_vtable(void)
+void test_grandchild_vtable(void)
 {
 
-    TEST_ASSERT_EQUAL(childAsParent->vptr->vPrint,Child_vPrint_);
-    TEST_ASSERT_EQUAL(((ChildVtbl*) childAsParent->vptr )->getNameFollowedByClassName,Child_getNameFollowedByClassName_);
+    TEST_ASSERT_EQUAL(grandchildAsParent->vptr->vPrint,Child_vPrint_);
+    TEST_ASSERT_EQUAL(((ChildVtbl*) grandchildAsParent->vptr )->getNameFollowedByClassName,GrandChild_getNameFollowedByClassName_);
 }
 
-void test_child_selector(void)
+void test_grandchild_selector(void)
 {
-	char * nameFollowedByClassName = Child_getNameFollowedByClassName(aChild);
-	TEST_ASSERT_EQUAL_STRING("JuniorChild",nameFollowedByClassName);
+	char * nameFollowedByClassName = Child_getNameFollowedByClassName(grandchildAsChild);
+	TEST_ASSERT_EQUAL_STRING("MikeGrandChild",nameFollowedByClassName);
 	free(nameFollowedByClassName);
 
+}
+
+void test_grandchild_metodo_no_virtual(void)
+{
+	GrandChild_foo(aGrandChild);
+	TEST_ASSERT_NULL(NULL);
 }
 
