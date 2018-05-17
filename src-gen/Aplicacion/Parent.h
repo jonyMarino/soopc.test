@@ -18,8 +18,6 @@
 
 /* Dependency with parent package */
 #include "Aplicacion/Aplicacion.h"
-/* Dependency with <stdio.h>. */
-#include <stdio.h>
 
 
 /**********************************************************************************
@@ -56,7 +54,10 @@ typedef struct {
 
 //Class Parent V-Table
 typedef struct ParentVtbl{
+	void (*vPrint)(Parent * self); 
 }ParentVtbl;
+
+
 
 
 void Parent_vPrint (Parent * self);

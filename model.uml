@@ -22,11 +22,9 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_szaBAFiiEeiHl6gR5njMUA" visibility="public" type="_PGxjkFijEeiHl6gR5njMUA" direction="return"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_wMivYEJOEeiRq9NLvdJ-Kg" name="&lt;stdio.h>"/>
-    <packagedElement xmi:type="uml:Usage" xmi:id="_z0a1AEJOEeiRq9NLvdJ-Kg" client="_DtlB8C4KEeieH5jKapBnwg" supplier="_wMivYEJOEeiRq9NLvdJ-Kg"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_A2EbgEJREeiRq9NLvdJ-Kg" name="GrandChildren">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_z0a1AEJOEeiRq9NLvdJ-Kg" client="_vFQ6IC4JEeieH5jKapBnwg" supplier="_wMivYEJOEeiRq9NLvdJ-Kg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_A2EbgEJREeiRq9NLvdJ-Kg" name="GrandChild">
       <generalization xmi:type="uml:Generalization" xmi:id="_HVlcoEJREeiRq9NLvdJ-Kg" general="_Rv00sC4KEeieH5jKapBnwg"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_A2EbgkJREeiRq9NLvdJ-Kg" name="vPrint"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_A2Ebg0JREeiRq9NLvdJ-Kg" name="ctor" isLeaf="true">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_A2EbhEJREeiRq9NLvdJ-Kg" name="name" type="_p2i-AEJLEeiRq9NLvdJ-Kg"/>
       </ownedOperation>
@@ -35,16 +33,12 @@
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZTJQ8FijEeiHl6gR5njMUA" visibility="public" type="_PGxjkFijEeiHl6gR5njMUA" direction="return"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_juDtEEJcEeiRq9NLvdJ-Kg" name="GrandGrandChildren">
-      <generalization xmi:type="uml:Generalization" xmi:id="_mT8KMEJcEeiRq9NLvdJ-Kg" general="_A2EbgEJREeiRq9NLvdJ-Kg"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="__yqnUEJcEeiRq9NLvdJ-Kg" name="ctor" isLeaf="true">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="__yqnUUJcEeiRq9NLvdJ-Kg" name="name" type="_p2i-AEJLEeiRq9NLvdJ-Kg"/>
-      </ownedOperation>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_hSqFMFijEeiHl6gR5njMUA" name="getNameFollowedByClassName" visibility="public">
-        <ownedParameter xmi:type="uml:Parameter" xmi:id="_hSqFMVijEeiHl6gR5njMUA" visibility="public" type="_PGxjkFijEeiHl6gR5njMUA" direction="return"/>
-      </ownedOperation>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_f9HMEFn3EeiOJ4omxlPvRQ" client="_vFQ6IC4JEeieH5jKapBnwg" supplier="_bS0nMFn3EeiOJ4omxlPvRQ"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_gXok4Fn3EeiOJ4omxlPvRQ" client="_vFQ6IC4JEeieH5jKapBnwg" supplier="_dNs_gFn3EeiOJ4omxlPvRQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_p2i-AEJLEeiRq9NLvdJ-Kg" name="const char *"/>
   <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_PGxjkFijEeiHl6gR5njMUA" name="char *"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_wMivYEJOEeiRq9NLvdJ-Kg" name="&lt;stdio.h>"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bS0nMFn3EeiOJ4omxlPvRQ" name="&lt;stdlib.h>"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_dNs_gFn3EeiOJ4omxlPvRQ" name="&lt;string.h>"/>
 </uml:Model>

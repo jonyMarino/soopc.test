@@ -1,20 +1,20 @@
 /**********************************************************************************
  * Copyright: 
  * Project: RootElement
- * File: Aplicacion/GrandChildren.h
+ * File: Aplicacion/GrandChild.h
  * Code Management Tool File Version: 
- * SDD Component: GrandChildren
+ * SDD Component: GrandChild
  * Language: C
  * Author: 
  **********************************************************************************/
 
 /*!
- * \file Aplicacion/GrandChildren.h
- * \brief GrandChildren
+ * \file Aplicacion/GrandChild.h
+ * \brief GrandChild
  */
 
-#ifndef Aplicacion_GrandChildren_H
-#define Aplicacion_GrandChildren_H
+#ifndef Aplicacion_GrandChild_H
+#define Aplicacion_GrandChild_H
 
 /* Dependency with parent package */
 #include "Aplicacion/Aplicacion.h"
@@ -22,16 +22,16 @@
 
 
 /**********************************************************************************
- * Aplicacion/GrandChildren.h
+ * Aplicacion/GrandChild.h
  **********************************************************************************/
 
 /*## package Aplicacion */
 
 /*! 
- * \package GrandChildren
+ * \package GrandChild
  */
 
-/*## class TopLevel::GrandChildren */
+/*## class TopLevel::GrandChild */
 
 
 
@@ -40,33 +40,35 @@
 
 
 /*!
- * \brief Type definition of the class GrandChildren
+ * \brief Type definition of the class GrandChild
  */
-//Class GrandChildren V-Table
-struct GrandChildrenVtbl;
+//Class GrandChild V-Table
+struct GrandChildVtbl;
 
-//Class GrandChildren declaration
+//Class GrandChild declaration
 typedef struct {
 	Child super;
-}GrandChildren;
+}GrandChild;
 
 
-//Class GrandChildren V-Table
-typedef struct GrandChildrenVtbl{
+//Class GrandChild V-Table
+typedef struct GrandChildVtbl{
 	ChildVtbl superClass;
-}GrandChildrenVtbl;
+	void (*foo)(GrandChild * self); 
+}GrandChildVtbl;
 
 
-void GrandChildren_ctor (GrandChildren * self, const char * name);
-void GrandChildren_foo (GrandChildren * self);
 
-void GrandChildren_vPrint_ (Parent * self);
-void GrandChildren_foo_ (GrandChildren * self);
-char * GrandChildren_getNameFollowedByClassName_ (Child * self);
+
+void GrandChild_ctor (GrandChild * self, const char * name);
+void GrandChild_foo (GrandChild * self);
+
+void GrandChild_foo_ (GrandChild * self);
+char * GrandChild_getNameFollowedByClassName_ (Child * self);
 
 
 #endif
 
 /**********************************************************************************
- * File Path: Aplicacion/GrandChildren.h
+ * File Path: Aplicacion/GrandChild.h
  **********************************************************************************/

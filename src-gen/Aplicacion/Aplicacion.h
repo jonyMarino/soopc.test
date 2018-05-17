@@ -16,7 +16,12 @@
 #ifndef Aplicacion_Aplicacion_H
 #define Aplicacion_Aplicacion_H
 
-
+/* Dependency with <stdio.h>. */
+#include <stdio.h>
+/* Dependency with <stdlib.h>. */
+#include <stdlib.h>
+/* Dependency with <string.h>. */
+#include <string.h>
 
 /**********************************************************************************
  * Aplicacion/Aplicacion.h

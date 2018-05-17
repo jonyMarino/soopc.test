@@ -54,7 +54,10 @@ typedef struct {
 //Class Child V-Table
 typedef struct ChildVtbl{
 	ParentVtbl superClass;
+	char * (*getNameFollowedByClassName)(Child * self); 
 }ChildVtbl;
+
+
 
 
 void Child_ctor (Child * self, const char * name);

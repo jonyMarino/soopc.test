@@ -3,7 +3,7 @@
 	<name>SoopcDemo</name>
 	<comment></comment>
 	<projects>
-		<project>SoopcDemo</project>
+		<project>soopc.test</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
